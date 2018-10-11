@@ -1,0 +1,31 @@
+.grid-container {
+    background-color: green;
+    border: solid 1px black;
+    width:50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      ". a ."
+      ". b ."
+      ". . .";
+}
+
+.calculate {
+    align-self: center;
+    justify-content: center;
+}
+
+.head {
+    /* margin-top:150px ; */
+    grid-area: a;
+}
+
+.calc-body {
+    grid-area: b;
+}
+
+.in-length {
+    width: 100%;
+}
